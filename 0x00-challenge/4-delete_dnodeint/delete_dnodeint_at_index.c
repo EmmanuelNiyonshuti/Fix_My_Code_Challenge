@@ -28,7 +28,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (p != index)
 	{
-		*head = saved_head;
+		/* *head = saved_head;*/
+		saved_head = *head;
 		return (-1);
 	}
 	if (p == index)
