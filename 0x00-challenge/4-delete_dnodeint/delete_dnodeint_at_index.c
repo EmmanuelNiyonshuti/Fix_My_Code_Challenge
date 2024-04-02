@@ -28,10 +28,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	if (p != index)
 	{
-		*head = saved_head;/*I don't think he is necessary?*/
+		*head = saved_head;
 		return (-1);
 	}
-	if (p == index)/*must be p instead of 0*/
+	if (p == index)
 	{
 		tmp = (*head)->next;
 		free(*head);
